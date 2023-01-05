@@ -1,0 +1,167 @@
+.footer {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: #1e1e26;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 135px;
+}
+
+.social img {
+    margin: 0 5px;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.social-logo {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    fill: #fdfcfd;
+}
+
+.social-logo:hover {
+    fill: #f3603c;
+    cursor: pointer;
+}
+
+.links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    height: 135px;
+    margin-left: -215px;
+}
+
+.links-list li {
+    flex: 0 0 25%;
+    width: 300px;
+}
+
+.links-list li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: #fdfcfd;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.links-list li a:hover {
+    color: #f3603c;
+}
+
+.subscribe-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 135px;
+    margin-right: 35px;
+}
+
+.subscribe-copyright p {
+    font-size: 10px;
+    color: #686870;
+}
+
+.subscribe input {
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #f3603c;
+}
+
+.subscribe input:focus {
+    outline: 1px solid #f3603c;
+}
+
+.submit-btn {
+    border-style: none;
+    background: #f3603c;
+    color: #fdfcfd;
+    padding: 13px 20px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: baseline;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: #f98f75;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        height: auto;
+        /* width: 100%; */
+    }
+
+    .subscribe input {
+        width: 220px;
+        padding: 5px 15px;
+    }
+
+    .submit-btn {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+    .subscribe-copyright p {
+        position: relative;
+        bottom: -380px;
+        left: -50px;
+        align-items: center;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .logo-social {
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+    }
+
+    .social-logo {
+        height: 30px;
+        width: 30px;
+        margin: 0 17px;
+    }
+
+    .links-list {
+        margin: 0;
+        margin-bottom: 50px;
+        margin-top: -30px;
+
+    }
+
+    .links-list li {
+        width: 100px;
+    }
+}

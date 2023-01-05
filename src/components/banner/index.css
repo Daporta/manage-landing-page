@@ -1,0 +1,121 @@
+.banner {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: #f3603c;
+}
+
+.banner-container {
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-container h2 {
+    font-size: 36px;
+    font-weight: 500;
+    width: 500px;
+    color: #fefffc;
+}
+
+.banner-btn {
+    border-style: none;
+    background: #ffffff;
+    color: #f3603c;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.banner-btn:hover {
+    color: #f8c5bc;
+    cursor: pointer;
+}
+
+.pattern-container {
+    overflow: hidden;
+    position: absolute;
+    top: 2100px;
+    width: 75vw;
+    height: 200px;
+    padding-right: 174px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pattern-container img {
+    width: 450px;
+}
+
+.banner-pattern-left {
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+    margin-bottom: auto;
+    padding-right: 100px;
+    width: 400px;
+    opacity: 0.1;
+    overflow: hidden;
+}
+
+.banner-pattern-left img {
+    margin-right: auto;
+}
+
+.banner-pattern-right {
+    width: 400px;
+    position: relative;
+    right: -330px;
+    top: -325px;
+    margin-bottom: auto;
+    opacity: 0.1;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .banner-container h2 {
+        width: 75%;
+        margin-top: 100px;
+        font-size: 42px;
+    }
+
+    .banner-btn {
+        margin-bottom: 100px;
+    }
+
+    .pattern-container {
+        height: 400px;
+        top: 2700px;
+        left: 0;
+    }
+
+    .pattern-container img {
+        width: 550px;
+    }
+
+    .banner-pattern-left {
+        opacity: 0.1;
+        padding-right: 150px;
+        left: 0;
+        bottom: -30px;
+        margin-left: -430px;
+    }
+
+    .banner-pattern-right {
+        display: none;
+    }
+}

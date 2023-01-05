@@ -1,0 +1,150 @@
+.information {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #242e52;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 75%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.info-left-side {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: -20px;
+}
+
+.info-left-side h2 {
+    font-size: 35px; 
+}
+
+.info-left-side p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: -5px;
+    width: 80%;
+    color: #9898a0;
+}
+
+.info-right-side {
+    width: 60%;
+    margin-right: -100px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-card p {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.title-info {
+    margin-left: 30px;
+}
+
+.title-info h3 {
+    font-size: 14px;
+}
+
+.title-info p {
+    color: #9898a0;
+    width: 75%;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.infoId-bg {
+    background: #f3603c;
+    border-radius: 20px;
+    padding: 10px 25px;
+    height: fit-content;
+}
+
+.info-background-pattern {
+    position: absolute;
+    bottom: -1200px;
+    left: -450px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.info-relative-div {
+    position: relative;
+    padding: inherit;
+    overflow: hidden;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 480px) {
+    .information-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info-left-side {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .info-left-side p {
+        width: 100%;
+        margin: auto;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+    .info-right-side {
+        width: 100%;
+    }
+
+    .info-card {
+        flex-direction: column;
+    }
+
+    .info-card>p {
+        font-size: 18px;
+        margin-left: 20px;
+        background: #fff0eb;
+        padding: 10px 100px 10px 0px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .title-info {
+        margin-left: 0;
+    }
+
+    .title-info h3 {
+        margin-top: -50.5px;
+        margin-left: 100px;
+        font-size: 18px;
+    }
+
+    .title-info p {
+        font-size: 16px;
+        width: 90%;
+        margin: auto;
+        margin-left: 20px;
+        line-height: 30px;
+    }
+
+    .info-background-pattern {
+        top: 550px;
+        left: 300px;
+    }
+
+    .info-relative-div {
+        margin-right: -284.82px;
+    }
+}
